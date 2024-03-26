@@ -44,7 +44,7 @@ Each of these metrics was meticulously calculated and incorporated into our anal
 In this section, we delve into the relationships between various basketball statistics and their impact on a team's win percentage. Through visual exploration, we aim to draw meaningful conclusions that could inform team strategies and analytical approaches in basketball.
 
 ### Scatter Plot Matrix: `scatter.png`
-![Scatter Plot Matrix](plots/scatter.png)
+![Scatter Plot Matrix](Plots/scatter.png)
 The scatter plot matrix examines the pairwise relationships between our variables of interest and win percentage. Key insights include:
 - A positive correlation between `3pt_pct` and `win%` suggests that teams with higher three-point shooting efficiency tend to win more games.
 - The `rr` metric shows a substantial positive trend with `win%`, indicating that teams who excel in rebounding are likely to have a better winning record.
@@ -52,7 +52,7 @@ The scatter plot matrix examines the pairwise relationships between our variable
 - However, `3pt/fg` presents a less clear relationship, implying that simply attempting more three-pointers does not guarantee higher win rates.
 
 ### Coefficient Plot: `Coefficients.png`
-![Coefficient Plot](plots/Coefficients.png)
+![Coefficient Plot](Plots/Coefficients.png)
 The coefficient plot elucidates the predictive power of each variable within our regression model:
 - The `3pt_pct` has a pronounced positive coefficient, asserting its strong predictive power on winning outcomes.
 - Rebound rate (`rr`) also displays a substantial positive coefficient, underscoring the critical role of securing rebounds in winning games.
@@ -60,7 +60,7 @@ The coefficient plot elucidates the predictive power of each variable within our
 - Interestingly, the `3pt/fg` coefficient is negligible, which might indicate that it's not the number of attempts but the efficiency of three-point shooting that influences wins.
 
 ### OLS Regression Results: `OLS_Regression_Results.png`
-![OLS Regression Results](plots/OLS_Regression_Results.png)
+![OLS Regression Results](Plots/OLS_Regression_Results.png)
 The OLS regression results provide a statistical backbone for our analysis:
 - The model explains approximately 57.4% of the variance in `win%` (Adjusted R-squared: 0.569), a significant portion, but also indicating room for other factors.
 - P-values for `3pt_pct`, `rr`, and `ts%` are well below the 0.05 threshold, confirming their statistically significant impact on the win percentage.
