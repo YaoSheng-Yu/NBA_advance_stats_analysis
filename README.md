@@ -24,16 +24,16 @@ The analysis begins with a comprehensive dataset extracted from `game.csv`, enco
 - **`wl_home`**: Win or loss outcome for the home team.
 
 ### Advanced Variables Derived:
-- **Rebound Rate (`rr`)**: Calculated as the ratio of total rebounds to the sum of rebounds and rebounds allowed to the opponent. This metric indicates a team's effectiveness in securing rebounds over its opponents.
+- **Rebound Rate (`rr`)**: Calculated as the ratio of total rebounds to the sum of rebounds and rebounds allowed to the opponent. This metric indicates a team's effectiveness in securing rebounds over its opponents.  
 rr = reb_home / (reb_home + reb_away)
 
-- **Win Percentage (`win%`)**: Represents the proportion of games won by a team in a season, providing a straightforward measure of overall team success.
+- **Win Percentage (`win%`)**: Represents the proportion of games won by a team in a season, providing a straightforward measure of overall team success.  
 win% = Number of Wins / Total Games
 
-- **True Shooting Percentage (`ts%`)**: A measure of shooting efficiency that considers field goals, 3-point field goals, and free throws.
+- **True Shooting Percentage (`ts%`)**: A measure of shooting efficiency that considers field goals, 3-point field goals, and free throws.  
 ts% = pts / (2 * (fga + 0.44 * fta))
 
-- **Three-Point Attempt Rate (`3pt/fg`)**: The percentage of a team's field goal attempts that are three-pointers, illustrating the team's tendency to shoot from beyond the arc.
+- **Three-Point Attempt Rate (`3pt/fg`)**: The percentage of a team's field goal attempts that are three-pointers, illustrating the team's tendency to shoot from beyond the arc.  
 3pt/fg = (fg3a_home / fga_home) * 100
 
 
