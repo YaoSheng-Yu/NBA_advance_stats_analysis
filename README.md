@@ -82,11 +82,12 @@ We visualized the model’s predictions against the actual win percentages to as
 
 ![Predicted vs. Actual Win%](Plots/predicted.png)
 
-### Analysis:
-- The scatter plot of Actual vs. Predicted Win% displays a positive linear relationship, with the trend line indicating the model's predictions.
-- Points closer to the red dashed line represent accurate predictions by the model, while points further away indicate larger errors.
-- The plot shows that for many teams, the model predicts win percentages that are in close proximity to their actual values, suggesting a reasonably good fit.
-- However, the spread of points also signifies discrepancies, especially in teams with extreme win percentages, revealing areas where the model could be further refined for accuracy.
-
 The visualization reinforces our statistical findings and provides a graphical representation of the model's efficacy in predicting team performance in the NBA.
 
+## 5. Conclusion
+
+In this analysis, various statistical models were explored to predict NBA team win percentages based on advanced metrics such as three-point shooting efficiency, rebound rate, and true shooting percentage. While alternative models like Decision Trees and Random Forests were tested, the Ridge Regression model demonstrated the most optimal balance between complexity and predictive power.
+
+Our findings underscore the critical role of shooting efficiency and rebound control in determining game outcomes. It was particularly interesting to note that the quantity of three-point attempts did not correlate strongly with winning, in contrast to the quality of those attempts measured by the three-point percentage.
+
+This project serves as a testament to the power of machine learning in sports analytics and sets a foundation for further exploration into the nuances of basketball data.
