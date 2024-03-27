@@ -43,7 +43,7 @@ Each of these metrics was meticulously calculated and incorporated into our anal
 
 In this section, we delve into the relationships between various basketball statistics and their impact on a team's win percentage. Through visual exploration, we aim to draw meaningful conclusions that could inform team strategies and analytical approaches in basketball.
 
-### Scatter Plot Matrix: `scatter.png`
+### Scatter Plot Matrix: 
 ![Scatter Plot Matrix](Plots/scatter.png)
 The scatter plot matrix examines the pairwise relationships between our variables of interest and win percentage. Key insights include:
 - A positive correlation between `3pt_pct` and `win%` suggests that teams with higher three-point shooting efficiency tend to win more games.
@@ -51,15 +51,7 @@ The scatter plot matrix examines the pairwise relationships between our variable
 - A similar positive trend is observed between `ts%` and `win%`, reinforcing the value of shooting efficiency.
 - However, `3pt/fg` presents a less clear relationship, implying that simply attempting more three-pointers does not guarantee higher win rates.
 
-### Coefficient Plot: `Coefficients.png`
-![Coefficient Plot](Plots/Coefficients.png)
-The coefficient plot elucidates the predictive power of each variable within our regression model:
-- The `3pt_pct` has a pronounced positive coefficient, asserting its strong predictive power on winning outcomes.
-- Rebound rate (`rr`) also displays a substantial positive coefficient, underscoring the critical role of securing rebounds in winning games.
-- True shooting percentage (`ts%`) shows a positive impact, albeit to a lesser extent, suggesting its role as a complementary predictor of success.
-- Interestingly, the `3pt/fg` coefficient is negligible, which might indicate that it's not the number of attempts but the efficiency of three-point shooting that influences wins.
-
-### OLS Regression Results: `OLS_Regression_Results.png`
+### OLS Regression Results: 
 ![OLS Regression Results](Plots/OLS_Regression_Results.png)
 The OLS regression results provide a statistical backbone for our analysis:
 - The model explains approximately 57.4% of the variance in `win%` (Adjusted R-squared: 0.569), a significant portion, but also indicating room for other factors.
@@ -83,6 +75,23 @@ We visualized the model’s predictions against the actual win percentages to as
 ![Predicted vs. Actual Win%](Plots/predicted.png)
 
 The visualization reinforces our statistical findings and provides a graphical representation of the model's efficacy in predicting team performance in the NBA.
+
+### Feature Importance Analysis:
+
+The Ridge Regression model's coefficients provide insight into the relative importance of each feature:
+
+![Ridge Regression Coefficients](plots/Coefficient.png)
+
+- **Three-Point Attempt Rate (`3pt/fg`):** This feature has a negative coefficient, indicating that an increase in three-point attempt rate alone may not contribute positively to the win percentage, suggesting that strategy should focus on quality rather than quantity.
+  
+- **Three-Point Shooting Efficiency (`3pt_pct`):** The positive coefficient here emphasizes the importance of efficient three-point shooting. Teams that convert their three-point shots at a higher rate are likely to have a higher win percentage.
+
+- **Rebound Rate (`rr`):** With a significant positive coefficient, this metric is shown to be a crucial factor. Teams that excel at rebounding often control the game's pace and have additional scoring opportunities, which can lead to more wins.
+
+- **True Shooting Percentage (`ts%`):** The largest coefficient belongs to `ts%`, signifying its strong relationship with a team's winning record. This comprehensive shooting metric, which includes field goals, three-point field goals, and free throws, is a key indicator of a team's overall shooting effectiveness.
+
+The coefficients plot thus provides a valuable summary of the predictive power of each basketball statistic within our model. It shows that shooting efficiency, particularly `3pt_pct` and `ts%`, and rebounding ability are highly influential in determining a team's success in the league.
+
 
 ## 5. Conclusion
 
