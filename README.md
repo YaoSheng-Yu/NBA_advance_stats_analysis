@@ -68,3 +68,25 @@ The OLS regression results provide a statistical backbone for our analysis:
 - The negative coefficient for `3pt/fg` is intriguing, suggesting that a strategy focused solely on increasing three-point attempts may not be as effective as one that prioritizes shooting quality and rebounding.
 
 This exploratory analysis provides valuable insights, but it also emphasizes the complexity of predicting sports outcomes and the need for a nuanced understanding of game dynamics.
+
+## 4. Model Building
+
+A Ridge Regression model was built to predict NBA team win percentages. We standardized the features to ensure uniform scaling and used a regularized regression technique to handle potential multicollinearity among the variables.
+
+### Model Evaluation:
+- **Mean Squared Error (MSE):** Our model achieved an MSE of 103.66, which reflects the average squared difference between the estimated values and what was actually observed.
+- **R-squared:** The R-squared value was 0.51, indicating that approximately 51% of the variability in win percentage can be explained by our model. 
+
+### Visualizing Predictions:
+We visualized the model’s predictions against the actual win percentages to assess the accuracy of our model. This scatter plot provides a clear visual of the model's performance:
+
+![Predicted vs. Actual Win%](Plots/predicted.png)
+
+### Analysis:
+- The scatter plot of Actual vs. Predicted Win% displays a positive linear relationship, with the trend line indicating the model's predictions.
+- Points closer to the red dashed line represent accurate predictions by the model, while points further away indicate larger errors.
+- The plot shows that for many teams, the model predicts win percentages that are in close proximity to their actual values, suggesting a reasonably good fit.
+- However, the spread of points also signifies discrepancies, especially in teams with extreme win percentages, revealing areas where the model could be further refined for accuracy.
+
+The visualization reinforces our statistical findings and provides a graphical representation of the model's efficacy in predicting team performance in the NBA.
+
