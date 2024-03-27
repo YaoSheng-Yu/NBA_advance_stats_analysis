@@ -80,7 +80,7 @@ The visualization reinforces our statistical findings and provides a graphical r
 
 The Ridge Regression model's coefficients provide insight into the relative importance of each feature:
 
-![Ridge Regression Coefficients](plots/Coefficient.png)
+![Ridge Regression Coefficients](Plots/Coefficient.png)
 
 - **Three-Point Attempt Rate (`3pt/fg`):** This feature has a negative coefficient, indicating that an increase in three-point attempt rate alone may not contribute positively to the win percentage, suggesting that strategy should focus on quality rather than quantity.
   
