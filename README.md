@@ -2,6 +2,13 @@
 
 **Objective:** Uncover the impact of advanced basketball statistics on NBA team win percentages, utilizing data science techniques to reveal insights into team efficiency and strategy.
 
+## Index
+1. [Introduction](#1-introduction)
+2. [Data Collection and Preprocessing](#2-data-collection-and-preprocessing)
+3. [Exploratory Data Analysis (EDA)](#3-exploratory-data-analysis-eda)
+4. [Model Building](#4-model-building)
+5. [Conclusion](#5-conclusion)
+
 ---
 
 ## 1. Introduction
